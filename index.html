@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Registration Form</h1>
+    <form action="" method="get">
+        
+        <h2 class="h2">1. Personal Information</h2>
+        <label for="Name" class="Name">First Name:</label>
+        <input type="Text" Name="username" placeholder="Enter your first name">
+        <br><br>
+
+        <label for="last name">Last Name:</label>
+        <input type="text" name="last name" placeholder="Enter your last name">
+        <br><br>
+
+        <label for="Email">Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br><br>
+
+        <label for="dob"">Date of birth:</label>
+        <input type="date" name="dob" placeholder="Enter your date of birth">
+        <br><br>
+        <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label>
+      <br><br>
+      <label for="Mobile number">Mobile Number:</label>
+      <input type="tel" name="mobile number" placeholder="Enter your mobile number">
+      <br><br>
+      <label for="colour">Favorite colour:</label>
+      <input type="color"name="colour"placeholder="Choose your favorite colour">
+      <br><br>
+
+      <h2 class="h2">2. Academic Information</h2>
+      <label for="roll ">Roll Number:</label>
+        <input type="number" id="roll" name="roll_number" required>
+        <br><br>
+         <label for="admission">Year of Admission:</label>
+      <input type="number" id="admission" name="year_of_admission" required>
+        <br><br>
+        <label for="course">Course / Branch:</label>
+      <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option value="CSE">Computer Science</option>
+        <option value="ECE">Electronics</option>
+        <option value="ME">Mechanical</option>
+        <option value="CE">Civil</option>
+      </select>
+      <br><br>
+      <label for="skills">Rate Your Coding Skills:</label>
+      <input type="range" id="skills" name="coding_skills" min="1" max="10">
+      <br><br>
+      <label for="time">Prefered lab time:</label>
+      <input type="time" id="time" name="preferred_lab_time">
+      <br><br>
+      <label for="month">Graduation Month:</label>
+      <select id="month" name="graduation_month">
+        <option value="">Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+
+      </select>
+      <br><br>
+      <h2 class="h2">3. Documents</h2>
+      <label for="file">Upload Passport size photo:</label>
+      <input type="file" id="file" name="passport_photo" placeholder="Upload your passport size photo">
+      <br><br>
+      <label for="file">Upload Marksheet or ID proof:</label>
+      <input type="file" id="file" name="id_proof" placeholder="Upload your marksheet or ID proof">
+      <br><br>
+      <h2 class="h2">4. Additional Information</h2>
+      <label for="website">Personal Website / LinkedIn:</label>
+      <input type="url" id="website" name="website">
+      <br><br>
+     <label for="about you">About you:</label><br>
+     <textarea id="about you" name="about you" rows="6" cols="60" placeholder="Tell us about yourself"></textarea>
+     <br><br>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I accept the Terms & Conditions</label>
+      <br><br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+     
+
+</form>
+</body>
+</html>
